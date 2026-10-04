@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { ManagedConfigurations } from '@capawesome/capacitor-managed-configurations';
-import { Platform } from '@ionic/angular';
+import { Platform } from '@ionic/angular/lazy';
 
 @Component({
   standalone: false,
   selector: 'app-managed-configurations',
   templateUrl: './managed-configurations.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./managed-configurations.page.scss'],
 })
 export class ManagedConfigurationsPage implements OnInit {

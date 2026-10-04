@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Camera, CameraResultType } from '@capacitor/camera';
 import { Filesystem } from '@capacitor/filesystem';
 import { PhotoEditor } from '@capawesome/capacitor-photo-editor';
@@ -7,6 +7,7 @@ import { PhotoEditor } from '@capawesome/capacitor-photo-editor';
   standalone: false,
   selector: 'app-photo-editor',
   templateUrl: './photo-editor.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./photo-editor.page.scss'],
 })
 export class PhotoEditorPage {

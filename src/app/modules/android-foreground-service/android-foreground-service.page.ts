@@ -1,4 +1,9 @@
-import { Component, NgZone, OnInit } from '@angular/core';
+import {
+  Component,
+  NgZone,
+  OnInit,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import {
   ForegroundService,
   ServiceType,
@@ -8,6 +13,7 @@ import {
   standalone: false,
   selector: 'app-android-foreground-service',
   templateUrl: './android-foreground-service.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./android-foreground-service.page.scss'],
 })
 export class AndroidForegroundServicePage implements OnInit {

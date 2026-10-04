@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
   standalone: false,
   selector: 'app-home',
   templateUrl: './home.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./home.page.scss'],
 })
 export class HomePage {

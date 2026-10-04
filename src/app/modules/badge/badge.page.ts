@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Badge } from '@capawesome/capacitor-badge';
 
@@ -6,6 +6,7 @@ import { Badge } from '@capawesome/capacitor-badge';
   standalone: false,
   selector: 'app-badge',
   templateUrl: './badge.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./badge.page.scss'],
 })
 export class BadgePage implements OnInit {

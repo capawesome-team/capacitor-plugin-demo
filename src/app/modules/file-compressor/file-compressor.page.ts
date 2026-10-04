@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Filesystem } from '@capacitor/filesystem';
@@ -9,6 +9,7 @@ import { FilePicker } from '@capawesome/capacitor-file-picker';
   standalone: false,
   selector: 'app-file-compressor',
   templateUrl: './file-compressor.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./file-compressor.page.scss'],
 })
 export class FileCompressorPage {

@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { Router } from '@angular/router';
-import { IonicModule, NavController } from '@ionic/angular';
+import { IonicModule, NavController } from '@ionic/angular/lazy';
 
 @NgModule({
   imports: [

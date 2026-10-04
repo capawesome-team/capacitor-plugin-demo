@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Directory, Filesystem } from '@capacitor/filesystem';
 import { FileOpener } from '@capawesome-team/capacitor-file-opener';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
@@ -7,6 +7,7 @@ import { FilePicker } from '@capawesome/capacitor-file-picker';
   standalone: false,
   selector: 'app-file-opener',
   templateUrl: './file-opener.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./file-opener.page.scss'],
 })
 export class FileOpenerPage {

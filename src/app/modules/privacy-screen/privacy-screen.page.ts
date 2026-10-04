@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { PrivacyScreen } from '@capacitor-community/privacy-screen';
 
 @Component({
   standalone: false,
   selector: 'app-privacy-screen',
   templateUrl: './privacy-screen.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./privacy-screen.page.scss'],
 })
 export class PrivacyScreenPage {

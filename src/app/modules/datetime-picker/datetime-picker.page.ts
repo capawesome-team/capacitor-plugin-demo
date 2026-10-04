@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import {
   DatetimePicker,
@@ -9,6 +9,7 @@ import {
   standalone: false,
   selector: 'app-datetime-picker',
   templateUrl: './datetime-picker.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./datetime-picker.page.scss'],
 })
 export class DatetimePickerPage {

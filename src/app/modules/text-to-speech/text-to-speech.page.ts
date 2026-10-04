@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { TextToSpeech, TTSOptions } from '@capacitor-community/text-to-speech';
 
@@ -6,6 +6,7 @@ import { TextToSpeech, TTSOptions } from '@capacitor-community/text-to-speech';
   standalone: false,
   selector: 'app-text-to-speech',
   templateUrl: './text-to-speech.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./text-to-speech.page.scss'],
 })
 export class TextToSpeechPage implements OnInit {

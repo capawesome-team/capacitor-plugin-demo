@@ -34,7 +34,7 @@
       @if (base64String) {
       <ion-item>
         <ion-label position="fixed">Photo</ion-label>
-        <ion-img [src]="base64String"></ion-img>
+        <img [src]="base64String" loading="lazy" decoding="async" />
       </ion-item>
       }
       <ion-button expand="block" (click)="selectPhoto()">

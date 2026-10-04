@@ -5,7 +5,7 @@ import {
   LoadingController,
   ModalController,
   PopoverController,
-} from '@ionic/angular';
+} from '@ionic/angular/lazy';
 import { SharedTestingModule } from '@tests/modules';
 import { DialogService } from './dialog.service';
 

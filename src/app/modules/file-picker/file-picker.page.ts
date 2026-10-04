@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { FilePicker, PickedFile } from '@capawesome/capacitor-file-picker';
 
@@ -6,6 +6,7 @@ import { FilePicker, PickedFile } from '@capawesome/capacitor-file-picker';
   standalone: false,
   selector: 'app-file-picker',
   templateUrl: './file-picker.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./file-picker.page.scss'],
 })
 export class FilePickerPage {

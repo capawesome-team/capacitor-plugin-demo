@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Directory, Filesystem } from '@capacitor/filesystem';
 import { Share } from '@capacitor/share';
 import { Zip } from '@capawesome-team/capacitor-zip';
@@ -8,6 +8,7 @@ import { FilePicker } from '@capawesome/capacitor-file-picker';
   standalone: false,
   selector: 'app-zip',
   templateUrl: './zip.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./zip.page.scss'],
 })
 export class ZipPage {

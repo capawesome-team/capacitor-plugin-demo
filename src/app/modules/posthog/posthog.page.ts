@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { Posthog } from '@capawesome/capacitor-posthog';
 
@@ -6,6 +6,7 @@ import { Posthog } from '@capawesome/capacitor-posthog';
   standalone: false,
   selector: 'app-posthog',
   templateUrl: './posthog.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./posthog.page.scss'],
 })
 export class PosthogPage {

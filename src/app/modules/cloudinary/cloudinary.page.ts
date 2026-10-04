@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { DialogService } from '@app/core';
 import { FileOpener } from '@capawesome-team/capacitor-file-opener';
@@ -9,6 +9,7 @@ import { FilePicker, PickedFile } from '@capawesome/capacitor-file-picker';
   standalone: false,
   selector: 'app-cloudinary',
   templateUrl: './cloudinary.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./cloudinary.page.scss'],
 })
 export class CloudinaryPage {

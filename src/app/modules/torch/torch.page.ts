@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Torch } from '@capawesome/capacitor-torch';
 
 @Component({
   standalone: false,
   selector: 'app-torch',
   templateUrl: './torch.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./torch.page.scss'],
 })
 export class TorchPage {

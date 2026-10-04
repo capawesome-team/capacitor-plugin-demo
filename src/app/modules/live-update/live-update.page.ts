@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { UntypedFormControl, UntypedFormGroup } from '@angular/forms';
 import { DialogService } from '@app/core';
 import { LiveUpdate } from '@capawesome/capacitor-live-update';
-import { AlertInput } from '@ionic/angular';
+import { AlertInput } from '@ionic/angular/lazy';
 
 @Component({
   standalone: false,
   selector: 'app-live-update',
   templateUrl: './live-update.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./live-update.page.scss'],
 })
 export class LiveUpdatePage {

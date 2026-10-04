@@ -1,4 +1,4 @@
-import { Platform } from '@ionic/angular';
+import { Platform } from '@ionic/angular/lazy';
 
 export function createPlatformSpy(): jasmine.SpyObj<Platform> {
   return jasmine.createSpyObj('Platform', {

@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { KeepAwake } from '@capacitor-community/keep-awake';
 
 @Component({
   standalone: false,
   selector: 'app-keep-awake',
   templateUrl: './keep-awake.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./keep-awake.page.scss'],
 })
 export class KeepAwakePage {

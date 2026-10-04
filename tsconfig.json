@@ -2,13 +2,11 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "sourceMap": true,
     "declaration": false,
-    "downlevelIteration": true,
     "experimentalDecorators": true,
-    "moduleResolution": "node",
+    "moduleResolution": "bundler",
     "importHelpers": true,
     "target": "ES2022",
     "module": "es2020",
@@ -20,16 +18,16 @@
     "skipLibCheck": true,
     "paths": {
       "@app/*": [
-        "src/app/*"
+        "./src/app/*"
       ],
       "@env/*": [
-        "src/environments/*"
+        "./src/environments/*"
       ],
       "@e2e/*": [
-        "e2e/src/*"
+        "./e2e/src/*"
       ],
       "@tests/*": [
-        "src/tests/*"
+        "./src/tests/*"
       ]
     },
     "useDefineForClassFields": false

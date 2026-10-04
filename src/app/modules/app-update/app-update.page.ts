@@ -1,11 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { AppUpdate, AppUpdateInfo } from '@capawesome/capacitor-app-update';
-import { Platform } from '@ionic/angular';
+import { Platform } from '@ionic/angular/lazy';
 
 @Component({
   standalone: false,
   selector: 'app-app-update',
   templateUrl: './app-update.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./app-update.page.scss'],
 })
 export class AppUpdatePage implements OnInit {

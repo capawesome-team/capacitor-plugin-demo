@@ -1,73 +1,75 @@
 PODS:
   - Alamofire (5.10.2)
-  - Capacitor (8.1.0):
+  - Capacitor (8.5.2):
     - CapacitorCordova
-  - CapacitorApp (8.0.1):
+  - CapacitorApp (8.1.2):
     - Capacitor
-  - CapacitorCamera (8.0.1):
+  - CapacitorCamera (8.2.5):
     - Capacitor
+    - IONCameraLib (~> 2.0.0)
   - CapacitorCommunityKeepAwake (8.0.0):
     - Capacitor
   - CapacitorCommunityPrivacyScreen (6.0.0):
     - Capacitor
   - CapacitorCommunityTextToSpeech (8.0.0):
     - Capacitor
-  - CapacitorCordova (8.1.0)
-  - CapacitorFilesystem (8.1.2):
+  - CapacitorCordova (8.5.2)
+  - CapacitorFilesystem (8.1.4):
     - Capacitor
-    - IONFilesystemLib (~> 1.1.1)
-  - CapacitorHaptics (8.0.1):
+    - IONFilesystemLib (~> 2.0.0)
+  - CapacitorHaptics (8.0.2):
     - Capacitor
-  - CapacitorKeyboard (8.0.1):
+  - CapacitorKeyboard (8.0.6):
     - Capacitor
-  - CapacitorShare (8.0.1):
+  - CapacitorShare (8.0.3):
     - Capacitor
-  - CapawesomeCapacitorAppUpdate (8.0.3):
+  - CapawesomeCapacitorAppUpdate (8.0.5):
     - Capacitor
-  - CapawesomeCapacitorBackgroundTask (8.0.2):
+  - CapawesomeCapacitorBackgroundTask (8.0.3):
     - Capacitor
-  - CapawesomeCapacitorBadge (8.0.1):
+  - CapawesomeCapacitorBadge (8.0.3):
     - Capacitor
-  - CapawesomeCapacitorCloudinary (8.0.1):
+  - CapawesomeCapacitorCloudinary (8.0.2):
     - Capacitor
     - Cloudinary (~> 5.1.0)
-  - CapawesomeCapacitorFilePicker (8.0.2):
+  - CapawesomeCapacitorFilePicker (8.1.0):
     - Capacitor
-  - CapawesomeCapacitorLiveUpdate (8.2.0):
-    - Alamofire (~> 5.10.2)
+  - CapawesomeCapacitorLiveUpdate (8.4.4):
+    - Alamofire (< 6.0.0, >= 5.10.2)
     - Capacitor
     - ZIPFoundation (~> 0.9.0)
-  - CapawesomeCapacitorManagedConfigurations (8.0.1):
+  - CapawesomeCapacitorManagedConfigurations (8.0.2):
     - Capacitor
-  - CapawesomeCapacitorPhotoEditor (8.0.1):
+  - CapawesomeCapacitorPhotoEditor (8.0.2):
     - Capacitor
-  - CapawesomeCapacitorPosthog (8.2.1):
+  - CapawesomeCapacitorPosthog (8.6.2):
     - Capacitor
-    - PostHog (~> 3.19.1)
-  - CapawesomeCapacitorScreenOrientation (8.0.1):
+    - PostHog (< 4.0, >= 3.56.0)
+  - CapawesomeCapacitorScreenOrientation (8.0.3):
     - Capacitor
-  - CapawesomeCapacitorTorch (8.0.1):
+  - CapawesomeCapacitorTorch (8.0.2):
     - Capacitor
-  - CapawesomeTeamCapacitorBluetoothLowEnergy (8.0.4):
+  - CapawesomeTeamCapacitorBluetoothLowEnergy (8.3.2):
     - Capacitor
-  - CapawesomeTeamCapacitorDatetimePicker (8.0.1):
+  - CapawesomeTeamCapacitorDatetimePicker (8.2.0):
     - Capacitor
-  - CapawesomeTeamCapacitorFileCompressor (8.0.1):
+  - CapawesomeTeamCapacitorFileCompressor (8.0.4):
     - Capacitor
-  - CapawesomeTeamCapacitorFileOpener (8.0.1):
+  - CapawesomeTeamCapacitorFileOpener (8.0.5):
     - Capacitor
-  - CapawesomeTeamCapacitorPrinter (8.0.1):
+  - CapawesomeTeamCapacitorPrinter (8.0.5):
     - Capacitor
-  - CapawesomeTeamCapacitorWifi (8.0.1):
+  - CapawesomeTeamCapacitorWifi (8.0.4):
     - Capacitor
-  - CapawesomeTeamCapacitorZip (8.0.1):
+  - CapawesomeTeamCapacitorZip (8.0.4):
     - Capacitor
     - SSZipArchive (~> 2.6.0)
   - Cloudinary (5.1.0):
     - Cloudinary/ios (= 5.1.0)
   - Cloudinary/ios (5.1.0)
-  - IONFilesystemLib (1.1.1)
-  - PostHog (3.19.9)
+  - IONCameraLib (2.0.0)
+  - IONFilesystemLib (2.0.0)
+  - PostHog (3.89.0)
   - SSZipArchive (2.6.0)
   - ZIPFoundation (0.9.20)
 
@@ -106,6 +108,7 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - Cloudinary
+    - IONCameraLib
     - IONFilesystemLib
     - PostHog
     - SSZipArchive
@@ -173,41 +176,42 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: 7193b3b92c74a07f85569e1a6c4f4237291e7496
-  Capacitor: 47b825120c6b8b6d6f9f053e9350a8960d436710
-  CapacitorApp: 942306cd1acf7774a00e89a3986af3a67c8cad7a
-  CapacitorCamera: fcacb82cc319e62f8d8c93e20f3f70e2464efe5e
+  Capacitor: 89067779e14fb7ea56af07b4817f45d1f0c2a269
+  CapacitorApp: 7b7e43debe505bc61beedb83796aa1368c86078b
+  CapacitorCamera: 2366a2b6d44417406ab33f8545d5c7b7b233028f
   CapacitorCommunityKeepAwake: 332bf035bbdf0b1c244fd492b35a8a06c8802111
   CapacitorCommunityPrivacyScreen: 682470c41cce325d7a85b95907887919d4694066
   CapacitorCommunityTextToSpeech: 43cd3c04174f38b8766f160830ee474cd5596439
-  CapacitorCordova: e8b76fd95fc1e157775abc484c59cc0de464095d
-  CapacitorFilesystem: 2db285a1ac6e475cc27cae2e1bea999000f9e2be
-  CapacitorHaptics: 4df2c625445cef39b67ea635a21802bc92df3b82
-  CapacitorKeyboard: 867eb4b3c901d9bb5c3d0c93b546185d52484e19
-  CapacitorShare: 0c58305114538568059bfc07111f22dcb9cb2a82
-  CapawesomeCapacitorAppUpdate: 3a7537c6a6696837b51d06f26b2e909fd7b9226f
-  CapawesomeCapacitorBackgroundTask: ca454a603fbe27d624c928d0c5e7477a920e468d
-  CapawesomeCapacitorBadge: 0a65ef36db6c236b41f324df5a2f12fe8cdd4a29
-  CapawesomeCapacitorCloudinary: a88fd2d69548709429a671b03f42f84e969c27a1
-  CapawesomeCapacitorFilePicker: eb29fb54c59614fede51e0e0fe25070dda9d024c
-  CapawesomeCapacitorLiveUpdate: ba874f846399d46c808a735867bb48bec2210fb8
-  CapawesomeCapacitorManagedConfigurations: 82c6b30de5c5063de908d5d1d6d7a1009be77c9a
-  CapawesomeCapacitorPhotoEditor: 1e9aecf5657bb4c227c0bc9d4cb7be9c3388558b
-  CapawesomeCapacitorPosthog: a081a8101ef38508c73e272da33bc1c3fbc52af4
-  CapawesomeCapacitorScreenOrientation: 81a4e51518bc6d6d1971ebe4f45892e29115c79e
-  CapawesomeCapacitorTorch: d118c3fe55e7472061f02d4775f08899fde73a32
-  CapawesomeTeamCapacitorBluetoothLowEnergy: 4e5af8b4d2a75d6a8749c8107870c859a4471b8e
-  CapawesomeTeamCapacitorDatetimePicker: 53b53602e3965e257bb952069d8ee1a48002dcf1
-  CapawesomeTeamCapacitorFileCompressor: 2419a578d1a010150eced310d23cf0c74a8346e5
-  CapawesomeTeamCapacitorFileOpener: 4b1c1a5a739915ed692296c5a7760903ca6ffa25
-  CapawesomeTeamCapacitorPrinter: d1fcf7013c2d2df68d9b655a8a82bc9fe4f6ca62
-  CapawesomeTeamCapacitorWifi: 93583f9568809a8b1ed63e92d217d49ba0854629
-  CapawesomeTeamCapacitorZip: ba5fe127115faa936bf689d58e3c63b46afdecee
+  CapacitorCordova: 5bec5648cbd09a176ce34ce5e7b6cdabb2c8a327
+  CapacitorFilesystem: 17ee1862a45ef2e5012311a87e18de1d45a6811b
+  CapacitorHaptics: 296f771ecd89c7a1bd92a7b6826a7d268e2e70f5
+  CapacitorKeyboard: f9e85e685082e9f63404de15db4a4291448b0912
+  CapacitorShare: 5b5e53347556bee89ae6163ed20b5b3c25fe75f1
+  CapawesomeCapacitorAppUpdate: b79b025d27c9ec3aab6afd88be87e5312e970a59
+  CapawesomeCapacitorBackgroundTask: 4aa93c0743a17df5b34d2ede15689afc0fc22245
+  CapawesomeCapacitorBadge: b5e0c79efc4c1dc0354ca27064b3e6ef98ab9c0a
+  CapawesomeCapacitorCloudinary: f0efd7133257af0ff87d2b54683e001c0dce3c35
+  CapawesomeCapacitorFilePicker: 63170fae6d17f3ce2547ffc0290f287e7bdc45d7
+  CapawesomeCapacitorLiveUpdate: e5b048e2d9efe792ff6a001286f2436cfcbb4b85
+  CapawesomeCapacitorManagedConfigurations: b466d066a6d301a041043d6393af62e920e2bfec
+  CapawesomeCapacitorPhotoEditor: 195f9e33b4f61233d6ab34f5aeb5dd8bd1e8f173
+  CapawesomeCapacitorPosthog: 7cdbee16c3b2f577578e273e9101112a71875ea9
+  CapawesomeCapacitorScreenOrientation: 18368e1ed685dc6904225063bddd52553a5a89f0
+  CapawesomeCapacitorTorch: 4041d0813b4e19af798ae5f142c7bbac4435dff5
+  CapawesomeTeamCapacitorBluetoothLowEnergy: 9a7fe586b77c97292adbb9ad83907a1e44e2847d
+  CapawesomeTeamCapacitorDatetimePicker: da86e8d8d0e2f3ae46449b0173f81d4a735384d4
+  CapawesomeTeamCapacitorFileCompressor: 52a1de5f6f55076eaac3fac73b08742193ff836d
+  CapawesomeTeamCapacitorFileOpener: ca3ac200dd3545fd264a755ded1d08c2afadffbc
+  CapawesomeTeamCapacitorPrinter: 7d9f1be83d094aa6024e2ccb148bb055543c98e7
+  CapawesomeTeamCapacitorWifi: 049394ddf262b7e4c03b63d6605876df7c3787b3
+  CapawesomeTeamCapacitorZip: fc1f840b389cb2a84da875ab9ea7290a4aeccf37
   Cloudinary: bab47d625e409936fb5c61d53f17719c80c258ad
-  IONFilesystemLib: dfa8706539ac9ab77ccfd6e5b3830ce9b5e57f6c
-  PostHog: 49247855f4cfdc1d2750b4247e6f6c0ff921e142
+  IONCameraLib: 729cae576e1a952602ce750a9790b6dc7d7e2e95
+  IONFilesystemLib: 0a001124dedc317c03032d138aaefbf4c18adb09
+  PostHog: 1ba1807ca4f7ccdd07cf80b38e95175718789bac
   SSZipArchive: 8a6ee5677c8e304bebc109e39cf0da91ccef22ea
   ZIPFoundation: dfd3d681c4053ff7e2f7350bc4e53b5dba3f5351
 
 PODFILE CHECKSUM: d3a9d4333ef156a5144c66e03d7f4ed4372b8eb3
 
-COCOAPODS: 1.16.2
+COCOAPODS: 1.17.0

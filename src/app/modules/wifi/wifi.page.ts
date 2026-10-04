@@ -1,10 +1,16 @@
-import { Component, NgZone, OnInit } from '@angular/core';
+import {
+  Component,
+  NgZone,
+  OnInit,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import { Wifi } from '@capawesome-team/capacitor-wifi';
 
 @Component({
   standalone: false,
   selector: 'app-wifi',
   templateUrl: './wifi.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./wifi.page.scss'],
 })
 export class WifiPage implements OnInit {

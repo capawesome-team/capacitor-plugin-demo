@@ -1,4 +1,10 @@
-import { Component, NgZone, OnDestroy, OnInit } from '@angular/core';
+import {
+  Component,
+  NgZone,
+  OnDestroy,
+  OnInit,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import { Capacitor, PluginListenerHandle } from '@capacitor/core';
 import { ScreenOrientation } from '@capawesome/capacitor-screen-orientation';
 
@@ -6,6 +12,7 @@ import { ScreenOrientation } from '@capawesome/capacitor-screen-orientation';
   standalone: false,
   selector: 'app-screen-orientation',
   templateUrl: './screen-orientation.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./screen-orientation.page.scss'],
 })
 export class ScreenOrientationPage implements OnInit, OnDestroy {

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 import { Printer } from '@capawesome-team/capacitor-printer';
 import { FilePicker } from '@capawesome/capacitor-file-picker';
 
@@ -6,6 +6,7 @@ import { FilePicker } from '@capawesome/capacitor-file-picker';
   standalone: false,
   selector: 'app-printer',
   templateUrl: './printer.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./printer.page.scss'],
 })
 export class PrinterPage {

@@ -1,4 +1,10 @@
-import { Component, NgZone, OnDestroy, OnInit } from '@angular/core';
+import {
+  Component,
+  NgZone,
+  OnDestroy,
+  OnInit,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import { App } from '@capacitor/app';
 import { PluginListenerHandle } from '@capacitor/core';
 import { BackgroundTask } from '@capawesome/capacitor-background-task';
@@ -7,6 +13,7 @@ import { BackgroundTask } from '@capawesome/capacitor-background-task';
   standalone: false,
   selector: 'app-background-task',
   templateUrl: './background-task.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./background-task.page.scss'],
 })
 export class BackgroundTaskPage implements OnInit, OnDestroy {

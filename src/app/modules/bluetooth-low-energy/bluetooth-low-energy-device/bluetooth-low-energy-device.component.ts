@@ -1,4 +1,11 @@
-import { Component, Input, NgZone, OnDestroy, OnInit } from '@angular/core';
+import {
+  Component,
+  Input,
+  NgZone,
+  OnDestroy,
+  OnInit,
+  ChangeDetectionStrategy,
+} from '@angular/core';
 import { DialogService } from '@app/core';
 import { PluginListenerHandle } from '@capacitor/core';
 import {
@@ -11,6 +18,7 @@ import {
   standalone: false,
   selector: 'app-bluetooth-low-energy-device',
   templateUrl: './bluetooth-low-energy-device.component.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./bluetooth-low-energy-device.component.scss'],
 })
 export class BluetoothLowEnergyDeviceComponent implements OnInit, OnDestroy {

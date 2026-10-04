@@ -1,4 +1,4 @@
-import { Component, NgZone } from '@angular/core';
+import { Component, NgZone, ChangeDetectionStrategy } from '@angular/core';
 import { DialogService } from '@app/core';
 import {
   BluetoothLowEnergy,
@@ -10,6 +10,7 @@ import { BluetoothLowEnergyDeviceComponent } from './bluetooth-low-energy-device
   standalone: false,
   selector: 'app-bluetooth-low-energy',
   templateUrl: './bluetooth-low-energy.page.html',
+  changeDetection: ChangeDetectionStrategy.Eager,
   styleUrls: ['./bluetooth-low-energy.page.scss'],
 })
 export class BluetoothLowEnergyPage {
