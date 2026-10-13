@@ -150,19 +150,18 @@ jobs:
           name: www
           path: www
       - name: Deploy to Cloudflare Pages
-        uses: cloudflare/pages-action@v1
+        uses: cloudflare/wrangler-action@9acf94ace14e7dc412b076f2c5c20b8ce93c79cd # v3.15.0
         id: cloudflare-deployment
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: ${{ vars.CLOUDFLARE_PROJECT_NAME }}
-          directory: www
+          command: pages deploy www --project-name=${{ vars.CLOUDFLARE_PROJECT_NAME }}
       - name: Comment the preview url
         if: github.event_name == 'pull_request'
         uses: peter-evans/create-or-update-comment@v3
         with:
           issue-number: ${{ github.event.number }}
           body: |
-            Deploy preview available at: ${{ steps.cloudflare-deployment.outputs.url }}
+            Deploy preview available at: ${{ steps.cloudflare-deployment.outputs.deployment-url }}
 
             Built with commit ${{ github.event.pull_request.head.sha }}.
