@@ -96,7 +96,7 @@ jobs:
       - name: Build and archive with xcodebuild
         working-directory: ios
         run: xcodebuild
-          -workspace App/App.xcworkspace
+          -project App/App.xcodeproj
           -scheme App
           -archivePath App/build/App.xarchive
           clean build archive
